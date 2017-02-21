@@ -3,9 +3,9 @@
 (function(module) {
   const aboutController = {};
 
-  // TODO: Define a function that hides all main section elements, and then reveals just the #about section:
-  function(){
-    $('.tab-content').hide();
+  // DONE: Define a function that hides all main section elements, and then reveals just the #about section:
+  aboutView.init = function (){
+    $('main section').hide();
     $('#about').show();
   }
 
