@@ -1,16 +1,16 @@
 'use strict';
 
 (function(module) {
-  const articleView = {};
+  const articleController = {};
   // DONE: Setup a function that kicks off the fetching and rendering of articles, using the same
   // code that used to be in index.html.
   // Also be sure to hide all the main section elements, and reveal the #articles section:
-  homeView.init = function(){
+  homeController.init = function(){
     $('#articles').empty();
-    Article.fetchAll(articleView.initIndexPage);
+    Article.fetchAll(articleController.initIndexPage);
     $('main section').hide();
     $('#articles').show();
   }
 
-  module.articleView = articleView;
+  module.articleController = articleController;
 })(window);

@@ -1,13 +1,13 @@
 'use strict';
 
 (function(module) {
-  const aboutView = {};
+  const aboutController = {};
 
   // DONE: Define a function that hides all main section elements, and then reveals just the #about section:
-  aboutView.init = function (){
+  aboutController.init = function (){
     $('main section').hide();
     $('#about').show();
   }
 
-  module.aboutView = aboutView;
+  module.aboutController = aboutController;
 })(window);
