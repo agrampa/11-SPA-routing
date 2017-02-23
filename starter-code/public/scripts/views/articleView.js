@@ -80,6 +80,6 @@
     articleView.setTeasers();
   };
 
-  Article.fetchAll(articleView.initIndexPage);
+  // Article.fetchAll(articleView.initIndexPage);
   module.articleView = articleView;
 })(window);

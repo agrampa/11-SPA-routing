@@ -23,7 +23,7 @@
     Article.all = rows.map(ele => new Article(ele));
   };
 
-  Article.fetchAll = callback => {
+  Article.fetchAll = (callback) => {
     $.get('/articles')
     .then(
       results => {

@@ -7,8 +7,8 @@
   // Also be sure to hide all the main section elements, and reveal the #articles section:
   articleController.init = function(){
     // $('#articles').empty();
-    Article.fetchAll(articleController.initIndexPage);
-    $('main section').hide();
+    Article.fetchAll(articleView.initIndexPage);
+    $('main > section').hide();
     $('#articles').show();
   }
 
